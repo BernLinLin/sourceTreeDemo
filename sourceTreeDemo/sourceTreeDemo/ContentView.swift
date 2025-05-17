@@ -24,6 +24,9 @@ struct ContentView: View {
                             
                             Text("测试1")
                                 .padding(.top, 100)
+                            
+                            Text("测试2")
+                                .padding(.top, 100)
                         }
                     }
                 }
