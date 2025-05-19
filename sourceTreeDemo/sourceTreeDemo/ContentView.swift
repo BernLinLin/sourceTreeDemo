@@ -19,12 +19,8 @@ struct ContentView: View {
                     NavigationLink {
                         Text("Item at \(item.timestamp, format: Date.FormatStyle(date: .numeric, time: .standard))")
                     } label: {
-                        VStack (alignment: .leading, spacing: 10) {
-                            Text(item.timestamp, format: Date.FormatStyle(date: .numeric, time: .standard))
-                            
-                            Text("测试1")
-                                .padding(.top, 100)
-                        }
+                        Text(item.timestamp, format: Date.FormatStyle(date: .numeric, time: .standard))
+
                     }
                 }
                 .onDelete(perform: deleteItems)
