@@ -21,6 +21,7 @@ struct ContentView: View {
                     } label: {
                         Text(item.timestamp, format: Date.FormatStyle(date: .numeric, time: .standard))
 
+                        Text("Item name \(item.name)")
                     }
                 }
                 .onDelete(perform: deleteItems)
